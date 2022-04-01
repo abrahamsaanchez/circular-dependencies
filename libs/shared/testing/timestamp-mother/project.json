@@ -1,0 +1,34 @@
+{
+  "root": "libs/shared/testing/timestamp-mother",
+  "sourceRoot": "libs/shared/testing/timestamp-mother/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/testing/timestamp-mother",
+        "tsConfig": "libs/shared/testing/timestamp-mother/tsconfig.lib.json",
+        "packageJson": "libs/shared/testing/timestamp-mother/package.json",
+        "main": "libs/shared/testing/timestamp-mother/src/index.ts",
+        "assets": ["libs/shared/testing/timestamp-mother/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/testing/timestamp-mother/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/testing/timestamp-mother"],
+      "options": {
+        "jestConfig": "libs/shared/testing/timestamp-mother/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

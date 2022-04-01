@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "shared/domain/timestamp": "libs/shared/domain/timestamp",
+    "shared/testing/timestamp-mother": "libs/shared/testing/timestamp-mother"
+  }
+}

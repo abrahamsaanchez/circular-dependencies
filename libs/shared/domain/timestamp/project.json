@@ -1,0 +1,34 @@
+{
+  "root": "libs/shared/domain/timestamp",
+  "sourceRoot": "libs/shared/domain/timestamp/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/domain/timestamp",
+        "tsConfig": "libs/shared/domain/timestamp/tsconfig.lib.json",
+        "packageJson": "libs/shared/domain/timestamp/package.json",
+        "main": "libs/shared/domain/timestamp/src/index.ts",
+        "assets": ["libs/shared/domain/timestamp/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/domain/timestamp/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/domain/timestamp"],
+      "options": {
+        "jestConfig": "libs/shared/domain/timestamp/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
