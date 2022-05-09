@@ -1,5 +1,4 @@
 {
-  "root": "libs/shared/domain/timestamp",
   "sourceRoot": "libs/shared/domain/timestamp/src",
   "projectType": "library",
   "targets": {

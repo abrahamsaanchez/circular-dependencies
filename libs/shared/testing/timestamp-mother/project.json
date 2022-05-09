@@ -1,5 +1,4 @@
 {
-  "root": "libs/shared/testing/timestamp-mother",
   "sourceRoot": "libs/shared/testing/timestamp-mother/src",
   "projectType": "library",
   "targets": {
