@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/shared/testing/timestamp-mother"],
       "options": {
-        "jestConfig": "libs/shared/testing/timestamp-mother/jest.config.js",
+        "jestConfig": "libs/shared/testing/timestamp-mother/jest.config.ts",
         "passWithNoTests": true
       }
     }

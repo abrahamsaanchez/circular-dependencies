@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/shared/domain/timestamp"],
       "options": {
-        "jestConfig": "libs/shared/domain/timestamp/jest.config.js",
+        "jestConfig": "libs/shared/domain/timestamp/jest.config.ts",
         "passWithNoTests": true
       }
     }

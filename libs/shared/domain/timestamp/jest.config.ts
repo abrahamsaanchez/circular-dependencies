@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'shared-testing-timestamp-mother',
-  preset: '../../../../jest.preset.js',
+  displayName: 'shared-domain-timestamp',
+
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -11,6 +11,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory:
-    '../../../../coverage/libs/shared/testing/timestamp-mother',
+  coverageDirectory: '../../../../coverage/libs/shared/domain/timestamp',
+  preset: '../../../../jest.preset.ts',
 };
